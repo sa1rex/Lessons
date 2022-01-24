@@ -10,24 +10,23 @@ namespace Lessons
     {
 
         /*
-         * Цикл While
+         * ключевое слоа break 
          */
 
         static void Main(string[] args)
         {
-            int count = 0;
-            int limit = int.Parse(Console.ReadLine());
-
-            while (count < limit)
+            for (int i = 0; i < 10; i++)
             {
 
-                count++;
-                Console.WriteLine(count);
-                
+                string msg = Console.ReadLine();
+                if (msg == "exit")
+                {
+                    break;
+                }
+                Console.WriteLine(i);
             }
-                
-
-
+            Console.ReadLine();
+           
         }
 
 

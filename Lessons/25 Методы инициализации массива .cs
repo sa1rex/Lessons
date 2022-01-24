@@ -10,31 +10,32 @@ namespace Lessons
     {
 
         /*
-         * Цикл While
-         */
+         * Вывод массива
+        */
 
         static void Main(string[] args)
         {
-            int count = 0;
-            int limit = int.Parse(Console.ReadLine());
+            int[] myArray = { 2, 4, 8, 12, 48 };
 
-            while (count < limit)
+            for (int i = 0; i < myArray.Length; i++)
             {
-
-                count++;
-                Console.WriteLine(count);
-                
+                Console.WriteLine(myArray[i]);
             }
-                
 
-
+            Console.ReadLine();
+            
         }
-
-
     }
 
 }
 
-    
+
+
+
+
+
+
+
+
 
 
